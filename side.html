@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Image Slider</title>
+    <style>
+        .slider {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .slides {
+            display: flex;
+            width: 40%;
+            animation: slide 2s infinite;
+        }
+        
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+        
+        @keyframes slide {
+           100% { transform: translateX(-100%); }
+            3% { transform: translateX(-100%); }
+          66% { transform: translateX(-200%); }
+           100% { transform: translateX(0%); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="https://i.ibb.co.com/ZSsp2fF/Screenshot-2024-10-19-11-43-24-237-lockscreen.jpg" alt="Slide 1">
+            
+            <img src="https://i.ibb.co.com/3THs9nd/Screenshot-2024-10-18-18-42-14-557-lockscreen.jpg" alt="Slide 2">
+            <img src="https://i.ibb.co.com/yBF6qqv/Screenshot-2024-10-16-18-33-31-684-lockscreen.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+</body>
+</html>
