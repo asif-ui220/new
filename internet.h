@@ -1,0 +1,3 @@
+function(){
+  printf("spck editor");
+}
